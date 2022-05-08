@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://kit.fontawesome.com/f3b7b8b654.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        box-sizing: border-box;
+    }
+    body{
+        background: linear-gradient(lightgray ,white);
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .back-branco{
+        background-color: white;
+        width: 40%;
+        height: 80% ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 10px 8px #888888;
+    }
+    .espaco-preto{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(82, 76, 167);
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+    }
+    h4{
+        margin-bottom: 50px;
+        font-size: 20px;
+        font-weight: normal;
+        width: 80%;
+        color: black;
+    }
+    form{
+        width: 90%;
+        max-width: 600px;
+    }
+    .input-div{
+      margin-bottom: 30px;
+      position: relative;
+    }
+    input, textarea{
+        width: 100%;
+        padding: 10px;
+        outline: 0;
+        border: 1px solid black;
+        color:black;
+        background: transparent;
+        font-size: 15px;
+    }
+    label{
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 10px;
+        color:black;
+        cursor: text;
+        transition: 0.2s;
+    }
+    button{
+        padding: 10px 0;
+        margin: 10px 0;
+        font-size: 15px;
+        color: black;
+        outline: none;
+        background: transparent;
+        border: 1px solid black;
+        width: 100%;
+        cursor: pointer;
+    }
+    .principal{
+        max-width: 600px;
+        width: 100%;
+    }
+
+
+    input:focus~label,
+    input:valid~label,
+    textarea:focus~label,
+    textarea:valid~label{
+        top: -35px;
+        font-size: 14px;
+    }
+    footer{
+        width: 100px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .fa-brands{
+        font-size: 50px;
+        padding: 0 15px;
+    }
+</style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="back-branco">
+        <div class="espaco-preto">
+            <h2>Entre em contato com o time!</h2>
+        </div>
+        
+        <h4>Preencha as informações abaixo para entrar em contato com um dos nossos colaboradores.</h4>
+        <form>
+        <div class="input-div">
+            <input type="text" id="name" required>
+            <label for="name">Nome Completo</label>
+        </div>
+        <div class="input-div">
+            <input type="text" id="number" required >
+            <label for="number">Telefone</label>
+        </div>
+        <div class="input-div">
+            <input type="text" id="email" required>
+            <label for="email">E-mail</label>
+        </div>
+        <div class="input-div">
+            <textarea id="message" cols="30" rows="8" required></textarea>
+            <label for="message">Mensagem a ser enviada</label>
+        </div>
+        <button type="submit">Enviar mensagem</button>
+        
+        </form>
+        <a href="/index.html" class="principal"><button type="submit">Página Principal</button></a> 
+        </div>
+
+    <footer>
+        <div class="github">
+            <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="linkedin">
+            <a href="https://linkedin.com/">
+            <i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="facebook">
+            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </footer>
+    
+    </div>
+</body>
+</html>
