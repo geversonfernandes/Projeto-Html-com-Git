@@ -1,0 +1,50 @@
+body{
+    background-color: lightgray;
+    text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+#principal{
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: whitesmoke;
+}
+#principal > h1{
+    padding: 20px;
+}
+header,#sec-principal{
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: justify;
+}
+h2{
+    text-align: center;
+}
+h3{
+    font-size: 1.2em;
+}
+img{
+    border-radius: 50%;
+}
+#container{
+    width: 100%;
+}
+.secao > a > img{
+    height: 150px;
+    border-radius: 50%;
+}
+footer > a > img{
+    height: 80px;
+}
+.secao{
+    display: inline;
+}
+.secao > p{
+    display: inline;
+}
+#sec-secundaria{
+    width: 24%;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+}
