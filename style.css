@@ -9,15 +9,20 @@ body{
     margin-right: 30%;
     background-color: whitesmoke;
 }
-#principal > h1{
+#header > h1{
     padding: 20px;
+    text-align: center;
 }
-header,#sec-principal{
+#segunda-secao, #primeira-secao{
     margin-left: 25%;
     margin-right: 25%;
     text-align: justify;
 }
-h2{
+#segunda-secao > p:nth-child(4){
+    text-align: center;
+}
+
+h2,h3{
     text-align: center;
 }
 h3{
@@ -42,9 +47,24 @@ footer > a > img{
 .secao > p{
     display: inline;
 }
-#sec-secundaria{
+.sec-secundaria{
     width: 24%;
     display: inline-block;
     margin: 0;
     text-align: center;
+}
+@media (max-width: 942px){
+	.sec-secundaria{
+		width: 100%;
+	}
+}
+@media (min-width: 942px) and (max-width: 1250px){
+	.sec-secundaria{
+		width: 49.7%;
+	}
+}
+@media (min-width: 1250px) and (max-width: 1700px){
+	.sec-secundaria{
+		width: 33%;
+	}
 }
